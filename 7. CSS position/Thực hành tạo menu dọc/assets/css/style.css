@@ -1,0 +1,40 @@
+.main-menu {
+    list-style: none;
+    /* color: aliceblue; */
+    width: 50%;
+}
+.main-menu li {
+    position: relative;
+}
+.submenu {
+    width: 200px;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: #333333;
+}
+.submenu li {
+    padding: 10px;
+}
+.submenu a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu-title {
+    margin: 0;
+    padding: 10px 20px;
+    width: 70px;
+    background-color: #333333;
+    color: aliceblue;
+}
+.menu-title + ul {
+    visibility: hidden;
+}
+.menu-title:hover + ul {
+    visibility: visible;
+}
+.menu-title:hover {
+    background-color: red;
+}
+

@@ -1,0 +1,46 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+li,
+p,
+a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #000000;
+}
+
+h3 {
+    color: #333333;
+    border-bottom: 1px solid #ddd;
+}
+
+p {
+    color: #444444;
+}
+
+a {
+    color: rgb(129, 12, 12);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+}

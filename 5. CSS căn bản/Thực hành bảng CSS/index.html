@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        main div {
+            margin: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .border table, .border th, .border td {
+            border-collapse: unset;
+            width: auto;
+        }
+        .width-height th {
+            height: 50px;
+        }
+        .text-align th {
+            text-align: left;
+        }
+
+        .vertical-align td {
+            height: 50px;
+            vertical-align: bottom;
+        }
+        .padding th, .padding td {
+            padding: 15px;
+        }
+        .color tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .color th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="border">
+            <h3>Bảng có đường viền</h3>
+            <table>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tên</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div>
+        <div class="border-collapse">
+            <h3>Đường viền nhỏ</h3>
+            <table>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tên</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div>
+        <div class="width-height">
+            <h3>table {width: 100%}, th {height: 50px}</h3>
+            <table>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tên</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div><br>
+        <div class="text-align">
+            <h3>th {text-align: left}</h3>
+            <table>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tên</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div>
+        <div class="vertical-align">
+            <h3>td {vertical-align: bottom}</h3>
+            <table>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tên</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div>
+        <div class="padding">
+            <h3>th, td {padding: 15px}</h3>
+            <table>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tên</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div>
+        <div class="color">
+            <h3><pre>tr:nth-child(even) {background-color: #f2f2f2}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+            </pre></h3>
+            <table>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tên</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

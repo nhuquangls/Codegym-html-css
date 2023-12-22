@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký học viên</title>
+    <style>
+        .container {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(244, 250, 165);
+        }
+
+        h3 {
+            background-color: rgb(179, 253, 253);
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+        }
+
+        .name,
+        .birthday,
+        .gender,
+        .address,
+        .class-name,
+        .email,
+        .phone-number,
+        .button {
+            display: flex;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <h3>ĐĂNG KÝ HỌC VIÊN</h3>
+            <form action="#" method="post">
+                <div class="name">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="birthday">
+                    <label for="birthday">Ngày sinh</label>
+                    <input type="text" id="birthday" name="birthday">
+                </div>
+                <div class="gender">
+                    <label>Giới tính</label>
+                    <div class="choose-gender">
+                        <label>
+                            <input type="radio" name="gender" value="male">Nam
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">Nữ
+                        </label>
+                    </div>
+                </div>
+                <div class="address">
+                    <label for="address">Địa chỉ</label>
+                    <textarea name="address" id="address" cols="30" rows="4"></textarea>
+                </div>
+                <div class="class-name">
+                    <label for="class-name">Lớp</label>
+                    <select name="class-name" id="class-name">
+                        <option value="blank">-- Chọn lớp --</option>
+                        <option value="BW2311R1">BW2311R1</option>
+                    </select>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="phone-number">
+                    <label for="phone-number">Điện Thoại</label>
+                    <input type="number" name="phone-number" id="phone-number">
+                </div>
+                <div class="button">
+                    <label> </label>
+                    <input type="submit" value="Đăng ký">
+                    <input type="reset" value="Nhập lại">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
